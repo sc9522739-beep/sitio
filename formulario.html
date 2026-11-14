@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Conciencia Histórica</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+
+    <header>
+        <h1>Conciencia Histórica</h1>
+        <p>Conociendo nuestro pasado para comprender nuestro presente</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="index.html#acontecimientos">Acontecimientos</a>
+    </nav>
+
+    <main>
+        <h2>Formulario de conocimientos históricos</h2>
+        <p>Contesta las siguientes preguntas sobre la historia.</p>
+
+        <form action="#" method="post">
+
+            <label>Nombre completo:</label>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+
+            <label>Edad:</label>
+            <input type="number" name="edad" min="1" required>
+
+            <label>¿Cuál es tu acontecimiento histórico favorito?</label>
+            <select name="acontecimiento" required>
+                <option value="">Selecciona una opción</option>
+                <option>Independencia de México</option>
+                <option>Revolución Mexicana</option>
+                <option>Llegada del hombre a la Luna</option>
+                <option>Caída del Muro de Berlín</option>
+                <option>Invención de Internet</option>
+            </select>
+
+            <label>¿En qué año comenzó la Independencia de México?</label>
+            <input type="radio" name="independencia" value="1810" required> 1810
+            <input type="radio" name="independencia" value="1910"> 1910
+            <input type="radio" name="independencia" value="1821"> 1821
+
+            <label>¿Consideras importante conocer la historia?</label>
+            <input type="radio" name="importancia" value="Si" required> Sí
+            <input type="radio" name="importancia" value="No"> No
+
+            <label>¿Qué personaje histórico conoces?</label>
+            <input type="text" name="personaje" placeholder="Escribe un personaje">
+
+            <label>¿Qué aprendiste de esta página?</label>
+            <textarea name="aprendizaje" rows="4" placeholder="Escribe tu respuesta"></textarea>
+
+            <label>¿Qué tema te gustaría conocer más?</label>
+            <textarea name="tema" rows="3" placeholder="Escribe tu opinión"></textarea>
+
+            <button type="submit">Enviar respuestas</button>
+            <button type="reset">Limpiar formulario</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 Conciencia Histórica</p>
+    </footer>
+
+</body>
+</html>
